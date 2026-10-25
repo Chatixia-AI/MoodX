@@ -194,3 +194,11 @@ python3 scripts/generate_image.py \
 Remove `--dry-run` to generate the asset. Each image receives a JSON metadata
 sidecar recording the exact generation request and SHA-256 digest. Public use
 also requires a visible AI disclosure and human review.
+
+## License
+
+MoodX is licensed under the [Apache License 2.0](LICENSE).
+
+BlackHole is a separate dependency with its own license and is not bundled.
+When local transcription is bundled, the app includes whisper.cpp under its MIT
+license (`Contents/Resources/LocalSTT/whisper.cpp-LICENSE.txt`).
