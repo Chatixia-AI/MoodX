@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MoodX — a doorway to participation</title>
+  <meta name="description" content="MoodX is a local macOS mixer that helps facilitators open up quiet online meetings: sound pads, a meeting timer, a protected decision checkpoint and a 45-second Quiet Think.">
+  <meta property="og:title" content="MoodX — a doorway to participation">
+  <meta property="og:description" content="Fun earns attention. Participation creates the value. A local macOS mixer for livelier Teams meetings.">
+  <meta property="og:image" content="https://chatixia-moodx.web.app/img/mixer.jpg">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230b1b33'/><g fill='%23f5b041'><rect x='14' y='26' width='6' height='24' rx='3'/><rect x='29' y='14' width='6' height='36' rx='3'/><rect x='44' y='22' width='6' height='28' rx='3'/></g></svg>">
+  <style>
+    :root {
+      --bg: #f6f8fc;
+      --surface: #ffffff;
+      --text: #0b1b33;
+      --muted: #4a5b78;
+      --line: #d8e1ef;
+      --sky: #2f8fe0;
+      --amber: #d98a00;
+      --amber-bg: #fff4dc;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #07111f;
+        --surface: #0d1c31;
+        --text: #e8eef8;
+        --muted: #9fb0c9;
+        --line: #1e3352;
+        --sky: #6cb8ff;
+        --amber: #f5b041;
+        --amber-bg: #2a2110;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 0 20px; }
+    header { padding: 22px 0; display: flex; justify-content: space-between; align-items: center; }
+    .brand { font-weight: 700; letter-spacing: -0.01em; display: flex; gap: 10px; align-items: center; }
+    .brand svg { width: 28px; height: 28px; }
+    nav a { color: var(--muted); text-decoration: none; margin-left: 18px; font-size: 15px; }
+    nav a:hover { color: var(--text); }
+    .hero { padding: 56px 0 32px; text-align: center; }
+    .pill {
+      display: inline-block; padding: 4px 12px; border-radius: 999px;
+      background: var(--amber-bg); color: var(--amber); font-size: 13px; font-weight: 600;
+    }
+    h1 { font-size: clamp(36px, 6vw, 60px); line-height: 1.08; letter-spacing: -0.02em; margin: 18px 0 14px; }
+    h1 em { font-style: normal; color: var(--sky); }
+    .lede { color: var(--muted); font-size: 19px; max-width: 640px; margin: 0 auto 28px; }
+    .cta { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .btn {
+      display: inline-block; padding: 12px 22px; border-radius: 10px; font-weight: 600;
+      text-decoration: none; border: 1px solid var(--line); color: var(--text); background: var(--surface);
+    }
+    .btn.primary { background: var(--sky); border-color: var(--sky); color: #fff; }
+    .shot { margin: 44px auto 0; border-radius: 14px; overflow: hidden; border: 1px solid var(--line); box-shadow: 0 20px 50px rgba(11, 27, 51, 0.18); }
+    .shot img { display: block; width: 100%; height: auto; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; padding: 56px 0; }
+    .card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 20px; }
+    .card h3 { margin: 0 0 6px; font-size: 17px; }
+    .card p { margin: 0; color: var(--muted); font-size: 15px; }
+    footer { border-top: 1px solid var(--line); padding: 24px 0 40px; color: var(--muted); font-size: 14px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+    footer a { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#0b1b33"/><g fill="#f5b041"><rect x="14" y="26" width="6" height="24" rx="3"/><rect x="29" y="14" width="6" height="36" rx="3"/><rect x="44" y="22" width="6" height="28" rx="3"/></g></svg>
+        MoodX
+      </div>
+      <nav>
+        <a href="https://github.com/Chatixia-AI/MoodX">GitHub</a>
+        <a href="https://chatixia.net/">Chatixia</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <span class="pill">Source preview · macOS</span>
+      <h1>Fun is a doorway to <em>participation</em>.</h1>
+      <p class="lede">MoodX is a local macOS mixer for facilitators. Open up quiet Teams meetings with sound pads, then give people the time and space to actually contribute.</p>
+      <div class="cta">
+        <a class="btn primary" href="https://github.com/Chatixia-AI/MoodX#readme">Build from source</a>
+        <a class="btn" href="https://github.com/Chatixia-AI/MoodX">View on GitHub</a>
+      </div>
+      <div class="shot">
+        <img src="img/mixer.jpg" width="1600" height="1070" alt="MoodX Mixer during a live session: the microphone is routed to BlackHole, the meeting timer is running and a 45-second Quiet Think prompt is on screen">
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h3>Sound pads</h3>
+        <p>Mix your mic with your own sound effects and send it all to Teams through BlackHole.</p>
+      </div>
+      <div class="card">
+        <h3>Meeting timer</h3>
+        <p>A protected decision checkpoint keeps the last minutes for actually deciding.</p>
+      </div>
+      <div class="card">
+        <h3>Quiet Think</h3>
+        <p>A 45-second pause: what risk, question or alternative haven't we considered?</p>
+      </div>
+      <div class="card">
+        <h3>Stays on your Mac</h3>
+        <p>No recording, no scoring, no cloud. Optional English/Japanese transcription runs locally.</p>
+      </div>
+    </section>
+
+    <footer>
+      <span>Apple silicon · macOS 14+ · requires BlackHole 2ch</span>
+      <span>Apache-2.0 · part of <a href="https://chatixia.net/">Chatixia</a></span>
+    </footer>
+  </div>
+</body>
+</html>

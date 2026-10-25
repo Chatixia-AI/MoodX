@@ -168,9 +168,6 @@ venv.bak/
 # Rope project settings
 .ropeproject
 
-# mkdocs documentation
-/site
-
 # mypy
 .mypy_cache/
 .dmypy.json
@@ -224,3 +221,6 @@ __marimo__/
 # MoodX facilitator-selected local audio. These files are user-owned test
 # inputs, not redistributable application assets.
 assets/sounds/
+
+# Firebase deploy cache
+.firebase/
