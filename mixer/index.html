@@ -8,15 +8,20 @@
       content="MoodX Local Mixer — a macOS soundboard and microphone mixer for Teams via BlackHole."
     />
     <title>MoodX Local Mixer</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="moodx-icon-32.png" />
+    <link rel="icon" type="image/svg+xml" href="moodx-icon.svg" />
     <link rel="stylesheet" href="styles.css" />
     <script src="app.js" defer="defer"></script>
   </head>
   <body>
     <main class="app-shell">
       <header class="topbar">
-        <div>
-          <p class="eyebrow">MoodX / macOS local audio</p>
-          <h1>Virtual Mixer</h1>
+        <div class="mixer-brand">
+          <img src="moodx-icon.svg" width="64" height="64" alt="" />
+          <div>
+            <p class="eyebrow">MoodX / macOS local audio</p>
+            <h1>Virtual Mixer</h1>
+          </div>
         </div>
         <div class="transport">
           <div class="connection-state" id="connection-state" data-state="offline">

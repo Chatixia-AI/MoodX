@@ -9,6 +9,54 @@ been agreed.
 
 ---
 
+## 2026-10-26 — Speaker-bounce logo and app icons
+
+### Goal
+
+Turn the selected MoodX audio-bounce design into lightweight, reusable brand
+assets and make the icon visible across the existing app surfaces.
+
+### Discussion and decisions
+
+- Explored monograms, sliders, reaction symbols, and audio-bounce concepts.
+- Selected a golden speaker orb with three diagonal grille slots above two
+  blue sound ripples, retaining the navy, blue, and amber palette.
+- Simplified the dimensional concept into solid vector shapes with one blue
+  side face per ripple so the mark remains clear at small sizes.
+- Keep the SVG as the editable source; use PNG exports for raster consumers
+  and an ICNS resource for the native macOS app bundle.
+
+### Work completed
+
+- Added the canonical SVG, PNG exports at 32–512 px, and brand usage notes.
+- Added browser favicons and visible branding to the landing page and mixer.
+- Updated the README and pitch-deck header to show the same logo.
+- Added the native ICNS resource, bundle metadata, and build-script copy step.
+
+### Validation and limits
+
+- Rendered and visually inspected the icon at 32, 64, and 256 px.
+- Validation details are recorded in the pull request.
+- Native Finder/Dock appearance requires a macOS build and launch; this
+  environment cannot run the macOS app.
+
+### Next steps
+
+- Review the pull request and verify the built app icon on macOS.
+
+### Documentation review
+
+- `README.md`: updated with logo and asset documentation link.
+- `assets/brand/README.md`: added source, palette, exports, and usage notes.
+- `docs/ADR.md`: reviewed; the branding change does not alter the application
+  architecture, so no new architecture decision is required.
+- `docs/pitch-deck/`: updated header branding, favicon, and review date;
+  product narrative and architecture remain applicable.
+- `docs/MEETING_MEMO.md`: updated with this session.
+
+---
+
+
 ## 2026-07-22 — Prepare the repository for Build Week submission
 
 ### Participants

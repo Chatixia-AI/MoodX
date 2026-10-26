@@ -13,6 +13,7 @@ swift build --package-path "$package_root" -c release
 mkdir -p "$contents_root/MacOS" "$contents_root/Resources"
 cp "$package_root/.build/release/MoodXMixer" "$contents_root/MacOS/MoodXMixer"
 cp "$package_root/Resources/Info.plist" "$contents_root/Info.plist"
+cp "$package_root/Resources/MoodX.icns" "$contents_root/Resources/MoodX.icns"
 
 stt_binary="$stt_source_root/build-static/bin/whisper-cli"
 stt_model="$stt_source_root/models/ggml-small.bin"

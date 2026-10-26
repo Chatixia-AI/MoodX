@@ -24,6 +24,8 @@ button { color: inherit; }
 
 .topbar, .section-heading, .transport, .signal-flow, .channel > div, .now-playing, .setup-strip { display: flex; align-items: center; }
 .topbar { justify-content: space-between; margin-bottom: 1.25rem; }
+.mixer-brand { display: flex; align-items: center; gap: 1rem; }
+.mixer-brand img { display: block; flex: 0 0 auto; }
 .topbar h1 { margin: 0.15rem 0 0; font-size: clamp(2.7rem, 5vw, 4.8rem); letter-spacing: -0.065em; line-height: 0.9; }
 .eyebrow { margin: 0; color: var(--lime); font-size: 0.7rem; font-weight: 850; letter-spacing: 0.15em; text-transform: uppercase; }
 .transport { gap: 0.65rem; }
