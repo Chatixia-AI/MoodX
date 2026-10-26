@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">Moodx — speaker bounce</title>
+  <rect width="512" height="512" rx="104" fill="#071D46"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M157 255C65 254 31 291 86 333C153 386 346 422 425 389C480 367 448 320 374 297" transform="translate(0 13)" stroke="#1363D8" stroke-width="30"/>
+    <path d="M157 255C65 254 31 291 86 333C153 386 346 422 425 389C480 367 448 320 374 297" stroke="#39C8F2" stroke-width="30"/>
+    <path d="M191 285C143 282 161 316 231 336C295 354 367 354 382 338C389 330 384 324 378 323" transform="translate(0 11)" stroke="#1363D8" stroke-width="23"/>
+    <path d="M191 285C143 282 161 316 231 336C295 354 367 354 382 338C389 330 384 324 378 323" stroke="#39C8F2" stroke-width="23"/>
+  </g>
+  <circle cx="283" cy="193" r="119" fill="#FFBE32"/>
+  <g fill="none" stroke="#071D46" stroke-linecap="round">
+    <path d="M259 232Q314 211 365 172" stroke-width="20"/>
+    <path d="M260 269Q327 245 373 210" stroke-width="20"/>
+    <path d="M287 291Q337 275 366 250" stroke-width="17"/>
+  </g>
+</svg>

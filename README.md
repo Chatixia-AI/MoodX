@@ -1,5 +1,10 @@
 # MoodX
 
+<p align="center"><img src="assets/brand/moodx-icon.svg" width="128" height="128" alt="MoodX speaker-bounce logo" /></p>
+
+The [brand assets](assets/brand/README.md) include the editable SVG, small PNG
+exports, and the native macOS app icon.
+
 <p align="center">
   <img
     src="assets/readme/participation-shift.jpg"

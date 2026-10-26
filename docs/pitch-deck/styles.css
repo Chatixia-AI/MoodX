@@ -41,7 +41,8 @@ img { display: block; max-width: 100%; }
 }
 
 .deck-header p { margin: 0; }
-.wordmark { color: var(--accent); font-size: 1rem; font-weight: 950; text-decoration: none; }
+.wordmark { display: inline-flex; align-items: center; gap: 0.65rem; color: var(--accent); font-size: 1rem; font-weight: 950; text-decoration: none; }
+.wordmark img { flex: 0 0 auto; }
 
 .slide {
   position: relative;
